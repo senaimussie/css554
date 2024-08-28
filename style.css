@@ -1,0 +1,320 @@
+/* Basic Reset */  
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+}  
+
+/* Header Styles */  
+header {  
+    padding: 10px 20px;  
+    position: fixed;  
+    width: 100%;  
+    top: 0;  
+    z-index: 2;  
+    background-color: transparent;  
+}  
+
+.navbar {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+    
+}
+
+.navbar div {
+    margin-top: 15px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: contents;s
+    font-size: 23px;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px 5px;
+}
+
+.navbar a:hover {
+    transition: 0.1s;
+    background-color: rgba(186, 171, 224, 0.323);
+    border-radius: 25px;
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: contents;
+    }
+} 
+
+
+.plan1 {  
+    background: url("hero.jpg") no-repeat center center/cover;  
+    height: 100vh;  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    text-align: center;  
+    color: white;  
+    padding-top: 80px;   
+}  
+
+.plan1 h1 {  
+    font-size: 48px;  
+    margin-bottom: 20px;  
+}  
+
+.plan1 h4 {  
+    font-size: 24px;  
+    margin-bottom: 40px;  
+}  
+
+.plan1 input[type="button"] {  
+    padding: 15px 30px;  
+    background-color: #007BFF;  
+    color: white;  
+    border: none;  
+    font-size: 25px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+}  
+
+.plan1 input[type="button"]:hover {  
+    background-color: #0056b3;  
+}
+
+
+/* Plan2 Section with Plain Background */  
+.plan2 {  
+    padding: 50px;  
+    background-color: #ffffff;  
+    text-align: center;  
+    color: #333;  
+}  
+
+.plan2 h2 {  
+    font-size: 36px;  
+    margin-bottom: 20px;  
+}  
+
+.plan2 p {  
+    font-size: 18px;  
+    line-height: 1.6;  
+}  
+
+/* Flexbox Container */  
+
+.g {
+    background: rgb(255, 255, 255);
+}
+
+.plan2 {
+    text-align: center; /* Center aligns the content inside the .plan2 div */
+}
+
+.images-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the gallery container horizontally */
+    gap: 12px; /* Space between rows */
+    max-width: 650px;
+    margin: 0 auto 2rem; 
+    justify-content:space-between ;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center; /* Center images inside the row */
+    gap: 10px; /* Space between images in a row */
+    width: 100%; /* Ensure the row takes the full width of the gallery */
+}
+
+.image1, .image4 {
+    flex-basis: 60%;
+    height: 200px; /* Set a fixed height to maintain the aspect ratio */
+}
+
+.image2, .image3 {
+    flex-basis: 40%;
+    height: 200px; /* Set a fixed height to maintain the aspect ratio */
+}
+
+.images-gallery img {
+    width: 100%;
+    height: 100%; /* Ensures images fill the container */
+    display: block;
+    object-fit: cover; /* Maintain aspect ratio, fill the container */
+}
+
+
+hr {  
+    width: 60px;  
+    height: 2px;  
+    background-color: #007bff;  
+    border: none;  
+    margin: 20px auto;  
+}  
+
+
+
+.plan3 {  
+    text-align: center;  
+    padding: 50px 0;  
+    background-color: #fef3f3be;  
+}  
+
+.plan3 h2 {  
+    font-size: 32px;  
+    margin-bottom: 10px;  
+}  
+
+.plan3 p {  
+    font-size: 18px;  
+    margin-bottom: 20px;  
+    max-width: 800px;  
+    margin-left: auto;  
+    margin-right: auto;  
+}  
+
+
+
+/* Services Section */  
+.services {  
+    display: flex;  
+    justify-content: space-around;  
+    margin-top: 23px;  
+}  
+
+.service {  
+    width: 30%;  
+    background-color: #fef3f3be;  
+    padding: 20px;  
+}  
+
+.service h3 {  
+    font-size: 24px;  
+    margin-bottom: 15px;  
+}  
+
+.service p {  
+    font-size: 16px;  
+    line-height: 1.6;  
+    color: #666;  
+} 
+@media screen and (max-width:760px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+
+/* Newsletter Section */  
+.newsletter {  
+    text-align: center;  
+    padding: 50px 0;  
+    background-color: #fef3f3be;  
+}  
+
+.newsletter h2 {  
+    font-size: 32px;  
+    margin-bottom: 10px;  
+}  
+
+.newsletter p {  
+    font-size: 18px;  
+    margin-bottom: 20px;  
+    max-width: 800px;  
+    margin-left: auto;  
+    margin-right: auto;  
+}  
+
+/* Newsletter Form */  
+.newsletter-form {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    margin-top: 20px;  
+}  
+
+.newsletter-form input[type="email"] { 
+    margin-right: 10px; 
+    padding: 10px;  
+    font-size: 16px;  
+    width: 300px;  
+    border: 1px solid #ccc;  
+    border-radius: 5px 0 0 5px;  
+    outline: none;  
+}  
+
+.newsletter-form button {  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    border: none;  
+    background-color: #007bff;  
+    color: white;  
+    cursor: pointer;  
+    border-radius: 0 5px 5px 0;  
+    transition: background-color 0.3s;  
+}  
+
+.newsletter-form button:hover {  
+    background-color: #0056b3;  
+}  
+@media screen and (max-width:660px) {
+    .plan4 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+} 
+
+
+
+footer {  
+    text-align: center;  
+    padding: 20px;
+    margin: 16px;  
+    background-color: #888383; 
+    color: #fff;   
+    position: relative;  
+    bottom: 0;  
+    width: 100%; 
+    height: 100%;
+
+}
+@media screen and (max-width:860px) {
+    .fotter {
+        flex-direction: column;
+        align-items: center;
+    }
+}
